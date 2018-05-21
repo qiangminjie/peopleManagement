@@ -28,6 +28,8 @@ function addEmployAdd($title, $type, $desc, $count, $status) {
         }
         return 1;
         //在增加一个
+
+        //工作区的状态
     } catch (PDOException $e) {
         $e->errorInfo();
         $db->rollback();
