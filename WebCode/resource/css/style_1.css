@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.glyphicon {
+    top: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+
+body.loading {
+    overflow: hidden;
+}
+
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+body.loading .load-gif {
+    display: block;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+footer {
+    position: relative;
+    margin-top: -40px;
+    height: 40px;
+    clear: both;
+    /* Set the fixed height of the footer here */
+    background-color: #1A1A1A;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.hid {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #0078ff;
+    text-decoration: none;
+}
+
+a.thumbnail:hover {
+    border-color: #0078ff;
+    background-color: rgba(157,218,255,0.5);
+}
+
+#statistics_div:hover {
+    border-color: #3e8f3e;
+    background-color: #b2dba1;
+}
+
+input.right-align {
+    text-align: right;
+}
+
+label.left-align {
+    text-align: left !important;
+}
+
+.div-no-padding {
+    padding: 0 0 0 0px;
+}
+
+.div-no-padding-left {
+    padding: 0 0 10px 0;
+}
+
+.div-no-margin-top {
+    margin-top: 0;
+}
+
+.div-margin-top-10 {
+  margin-top: 10px;
+}
+
+.div-no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.red-text {
+    color: red;
+}
+
+.btn-tooltip {
+  padding: 0px 2px 0px 2px;
+}
+
+.tooltip-inner {
+    text-align: left;
+    min-width: 220px;
+    max-width: 100%;
+}
+
+.badge {
+    background-color: #fff;
+    color: red;
+    margin-left: 5px;
+}
+
+#logo {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+    transform: translateY(25%);
+}
+
+.dropdown-menu {
+  min-width: 0;
+}
+
+.btn[disabled] {
+  opacity: .8;
+}
+
+.div-search-area {
+  margin: 0 !important;
+  padding: 10px 0 10px 0;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #b4b4b4;
+}
+
+.row-with-margin-right {
+  margin-left: 0 !important;
+  margin-right: 15px;
+  /*margin-top: 10px !important;*/
+}
+
+.div-with-margin {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.popover {
+  max-width: 100%;
+}
+/** =======================
+ * loading gif
+ ===========================*/
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../res/Preloader_1.gif) center no-repeat rgba(0, 0, 0, 0.2);
+}
+
+.nav-orange {
+    background-color: #0078ff;
+}
+
+.login-bottom-nav {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-orange {
+    color: #0078ff;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 a {
+    color: #0078ff;
+    font-size: 16px;
+}
+
+.nav {
+    padding-left: 15px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.accordion {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.icon-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li.open .link {
+    color: #0078ff;
+}
+
+.accordion li.open i {
+    color: #0078ff;
+}
+
+.accordion li.open i.icon-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.clearable {
+    background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+    border: 1px solid #999;
+    padding: 3px 18px 3px 4px;
+    /* Use the same right padding (18) in jQ! */
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+.clearable.x {
+    background-position: right 5px center;
+}
+
+
+/* (jQ) Show icon */
+
+.clearable.onX {
+    cursor: pointer;
+}
+
+
+/* (jQ) hover cursor style */
+
+.clearable::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+/* Remove IE default X */
+
+
+/*
+ * table
+ */
+
+span.user-actions, td div.btn-group {
+    visibility: hidden;
+}
+
+table {
+    background-color: #fdfdfd;
+}
+
+tr.pending-user:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+    visibility: visible;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+th.text-right-align {
+  text-align: right;
+}
+th.text-center-align {
+  text-align: center;
+}
+
+.td-template-create-time {
+    min-width: 75px;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    .table th, .table td {
+        padding-left: 50%;
+        border-top: 0;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+.pagination {
+    margin: 0;
+}
+
+
+/**
+ * Submenu
+ -----------------------------*/
+
+.submenu {
+    display: none;
+    background: #FFF;
+    font-size: 14px;
+}
+
+.submenu li {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+    background: #0078ff;
+    color: #FFF;
+}
+
+.submenu li a.hightlight {
+    color: cornflowerblue;
+}
+
+
+/**
+ * d3主绘图区域
+ */
+
+.container #main_area {
+    padding: 0
+}
+
+
+/**
+ * 垂直居中
+ */
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.fileInput{
+    font-size: x-small;
+}

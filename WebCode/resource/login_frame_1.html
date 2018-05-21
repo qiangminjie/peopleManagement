@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login page - Microwu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Management System for HybridApp's information" />
+    <meta name="keywords" content="mobile internet financial" />
+    <meta name="author" content="Michael Lee" />
+
+    <!--  styles -->
+    <link href="/resource/css/animate.css" rel="stylesheet">
+    <link href="/resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resource/css/loingframe-theme_1.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <section id="form" class="animated fadeInDown">
+      <div class="container">
+        <div class="mainbox">
+          <div class="panel white-alpha-90">
+            <div class="panel-heading">
+              <div class="panel-title text-center"><h2 class="text-orange">人才系统</h2></div>
+            </div>
+            <div class="panel-body">
+              <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+              <form id="loginform" class="form-horizontal" role="form">
+                <!-- username -->
+                <div id= "div-login-username">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="login-username" type="text" class="form-control clearable" name="username" value="" placeholder="输入手机号码">
+                  </div>
+                </div>
+                <!-- password -->
+                <div id="div-login-password">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="login-password" type="password" class="form-control" name="password" placeholder="在此输入密码">
+                  </div>
+                </div>
+
+                <div id="div-login-validate-code" class="hide">
+                  <div class="input-group" style="margin: 0 auto">
+                    <input id="validate-code-input"
+                           style="padding: 7px 5px; width: 100px; height: 35px; margin-right: 10px; text-align: center;">
+                    <label style="margin: 0px 10px 5px 0px">
+                    </label>
+                    <a href="javascript:void(0)" onclick="$('#verification-img').click()">看不清楚换一张</a>
+                  </div>
+                </div>
+
+                <div id="login-message"></div>
+                <div id="login-button-group" class="col-xs-12 text-center login-action ">
+                  <div class="checkbox col-md-8 col-md-offset-2">
+                    <!--<input id="login-remember" type="checkbox" name="remember" value="1" style="margin-top: 10px;"> 记住密码 &nbsp;-->
+                    <span id="btn-login" class="btn btn-success btn-lg btn-block">登录</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/resource/js/jquery-3.1.1.min.js"></script>
+    <script src="/resource/js/bootstrap.min.js"></script>
+    <script src="/resource/js/backstretch.min.js"></script>
+    <script src="/resource/js/md5.min.js"></script>
+    <script src="/resource/js/login.js"></script>
+    <script>
+      $(document).ready(function() {
+        // 切换背景图片
+        $.backstretch([
+          "/resource/res/bg1.png"
+        ], {duration: 3000, fade: 750});
+      });
+
+      // 按钮点击事件
+      $(document).find("#btn-login").click(loginAction);
+      // 在密码框中点击回车后相当于点击按钮
+      $(document).find("#login-password").keyup(function(event){
+        if(event.keyCode == 13){
+          $(document).find("#btn-login").click();
+        }
+      });
+
+      // clear input
+      function tog(v) { return v ? 'addClass' : 'removeClass'; }
+      $(document).on('input', '.clearable', function() {
+        $(this)[tog(this.value)]('x');
+      }).on('mousemove', '.x', function(e) {
+        $(this)[tog(this.offsetWidth-18 < e.clientX-this.getBoundingClientRect().left)]('onX');
+      }).on('touchstart click', '.onX', function( ev ){
+        ev.preventDefault();
+        $(this).removeClass('x onX').val('').change();
+      });
+    </script>
+  </body>
+</html>

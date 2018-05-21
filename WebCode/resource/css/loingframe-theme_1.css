@@ -1,0 +1,182 @@
+
+
+.navbar {
+    box-shadow: 0 0 3px 0 black;
+}
+
+.top-navbar-brand {
+    margin: 12px 0px;
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-nav {
+    margin: 12px 0px;
+}
+
+.footer-content {
+    margin: 10px;
+}
+
+#form .container {
+    margin-top: 145px;
+    margin-bottom: 70px;
+}
+
+.panel-heading {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.form {
+    background: #f8f8f8;
+    border-radius: 3px;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.jumbotron {
+    color: white;
+}
+
+.text-orange {
+  color: #0078ff;
+}
+
+.jumbotron p, .jumbotron p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media all and (min-width: 960px) {
+    .mainbox {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .mainbox {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+    .mainbox {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+#btn-login {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: #0078ff;
+    margin-left: 10px;
+    border: 0;
+}
+
+#btn-login:hover {
+    background-color: #46C3FF;
+    margin-left: 10px;
+    border: 0;
+}
+
+#loginform .input-group {
+    margin-bottom: 25px;
+}
+
+#loginform .input-group[class*="col-"] {
+    float: left;
+}
+
+.login-action {
+    border-top: 1px solid #e6e6e6;
+    margin-top: 10px;
+}
+
+.panel {
+    border: 1px solid #aaa;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 20px 1px #aaa;
+    border-radius: 10px;
+}
+
+.panel-body {
+    padding-top: 30px;
+}
+
+.panel-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.panel-title span {
+    font-family: 'Roboto Slab', serif;
+}
+
+#loginbox {
+    padding: 20px;
+}
+
+#registertext {
+    padding: 20px;
+}
+
+.white-alpha-90 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: white;
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(256, 256, 256, 0.9);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.black-alpha-90 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: black;
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.bigger-130 {
+    font-size: 130%;
+}
+
+.clearable {
+    background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+    /* padding: 3px 18px 3px 4px; */
+    /* Use the same right padding (18) in jQ! */
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+.clearable.x {
+    background-position: right 5px center;
+}
+
+
+/* (jQ) Show icon */
+
+.clearable.onX {
+    cursor: pointer;
+}
+
+
+/* (jQ) hover cursor style */
+
+.clearable::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+/* Remove IE default X */
