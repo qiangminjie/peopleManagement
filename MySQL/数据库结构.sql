@@ -1,7 +1,7 @@
 /**
 ****************************************************************************************
 File Description:
-
+尼玛
     SQL for people management system, execute this SQL to create tables!
 护手霜
 Table list:
