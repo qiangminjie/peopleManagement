@@ -1,7 +1,7 @@
 /**
 ****************************************************************************************
 File Description:
-
+测试哈哈哈
     SQL for people management system, execute this SQL to create tables!
 
 Table list:
