@@ -12,7 +12,7 @@ function addEmployAdd($title, $type, $desc, $count, $status) {
     //测试修改文件添加commit
     $sql = "insert into employ_add values(null,:title, :type, :desc, :count, :status)";
     $db = $GLOBALS['pdo'];
-    //增加注释测试commit退回
+    //增加注释测试commit退回这是一个可怕的修改
     try {
         $db->beginTransaction();
         $stmt = $db->prepare($sql);
